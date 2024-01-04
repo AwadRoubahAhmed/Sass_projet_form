@@ -1,0 +1,48 @@
+/* Reset, Constantes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Import*/
+@import "class";
+
+h1 {
+  color: $variable-1;
+}
+
+form {
+  min-height: 600px;
+  @extend display_flex;
+  background-color: $variable-2;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: $border;
+}
+
+input {
+  @extend my_extend;
+}
+
+label {
+  @extend my_label;
+}
+.btn {
+  @extend my_btn;
+}
+
+form {
+  @include content_form;
+}
+
+main > div {
+  $color: aqua;
+  background-color: $color;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  @extend display_flex;
+}
